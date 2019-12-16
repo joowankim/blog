@@ -1,91 +1,121 @@
+############################ Default configuration #########################
 baseURL = "https://kjw217.github.io/"
 languageCode = "en-us"
-title = "Timer | Responsive Multipurpose Bootstrap Hugo Template"
-theme = "timer-hugo"
+# site title 
+title = "Northendlab | Blog Template"
+# theme
+theme = "northendlab-hugo"
+# post pagination
+paginate = "5"
+# post excerpt
+summaryLength = "10"
+# disqus short name
+disqusShortname = "" # get your shortname form here : https://disqus.com
 
-# We Used Ionicons Icon font for Icon, for more details check this link - https://ionicons.com/
+[outputs]
+home = ["HTML", "AMP", "RSS", "JSON"]
 
-# Site Menus
-[menu]
-    # Navbar Menus
-    [[menu.nav]]
-        name    = "About"
-        url     = "about"
-        weight  = 2
-    [[menu.nav]]
-        name    = "Service"
-        url     = "service"
-        weight  = 3
-    [[menu.nav]]
-        name    = "Gallery"
-        url     = "gallery"
-        weight  = 4
-    [[menu.nav]]
-        name    = "Blog"
-        url     = "blog"
-        weight  = 5
-    [[menu.nav]]
-        name    = "Contact"
-        url     = "contact"
-        weight  = 6
+########################## Plugings ######################################
 
-# Site Params
+# css plugins
+[[params.plugins.css]]
+URL = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+URL = "plugins/themify-icons/themify-icons.css"
+
+# js plugins
+[[params.plugins.js]]
+URL = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+URL = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+URL = "plugins/search/fuse.min.js"
+[[params.plugins.js]]
+URL = "plugins/search/mark.js"
+[[params.plugins.js]]
+URL = "plugins/search/search.js"
+
+
+########################### Navigation ###################################
+
+# main menu
+[[menu.main]]
+URL = "contact"
+name = "Contact"
+weight = 1
+
+[[menu.main]]
+URL = "tools"
+name = "tools"
+weight = 2
+
+# footer menu
+[[menu.footer]]
+URL = "contact"
+name = "Contact"
+weight = 1
+
+[[menu.footer]]
+URL = "tools"
+name = "tools"
+weight = 2
+
+
+######################### Default Parameters ###########################
 [params]
-    home = "Home"
-    logo = "images/logo.png"
-    dateFormat = "6 January 2006"
-    # Meta data
-    description = "Airspace Hugo theme"
-    author = "Themefisher"
-    # Google Analitycs
-    googleAnalitycsID = "Your ID"
+# home
+home = "Home"
+# logo
+logo = "images/logo.svg"
+# meta data
+author = "Themefisher"
+description = "This is meta description"
+# google analitycs ID
+googleAnalitycsID = "Your ID"
+# contact form action
+contactFormAction = "#" # contact form works with : https://formspree.io
+# copyright
+copyright = "&copy; 2019 [Gethugothemes](https://gethugothemes.com) All Rights Reserved"
 
-    # Banner Section
-    [params.banner]
-        enable  = true
-        bgImage = "images/slider.jpg"
-        heading = "HI, MY NAME IS JONATHON & I AM A"
-        description = "WITH 10 YEARS EXPERIENCE, I'VE OCCUPIED MANY ROLES INCLUDING DIGITAL DESIGN DIRECTOR, WEB DESIGNER AND DEVELOPER. THIS SITE SHOWCASES SOME OF MY WORK."
-        btn     = true
-        btnText = "Download More"
-        btnURL  = "https://themefisher.com/"
-        [[params.banner.flipText]]
-            title   = "DESIGNER"
-        [[params.banner.flipText]]
-            title   = "DEVELOPER"
-        [[params.banner.flipText]]
-            title   = "FATHER"
+# preloader
+[params.preloader]
+enable = true
+preloader = "" # use png, jpg, svg or gif format
 
-    # Homepage About Section
-    [params.about]
-        enable  = true
-        title   = "ABOUT ME"
-        content = "Hello, I?™m a UI/UX Designer & Front End Developer from Victoria, Australia. I hold a master degree of Web Design from the World University.And scrambled it to make a type specimen book. It has survived not only five centuries. <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, adipisci voluptatum repudiandae, natus impedit repellat aut officia illum at assumenda iusto reiciendis placeat. Temporibus, vero."
-        image   = "images/about/about.jpg"
+# search
+[params.search]
+enable = true
 
-    # Call to Action
-    [params.cta]
-        enable  = true
-        title   = "SO WHAT YOU THINK ?"
-        content = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,<br>possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium."
-        btnText = "Contact with me"
-        btnURL  = "/contact"
 
-    # Portfolio Section On Homepage
-    [params.portfolio]
-        enable  = true
-        title   = "Latest Works"
-        subtitle= "Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus."
+####################### banner #######################################
+[params.banner]
+bgImage = "images/banner/banner-bg.svg"
+title = "Hi, I'm John Smith Doe. <br> I help people make the  worlds best software"
+image = "images/banner/illustration.svg"
 
-    [params.footer]
-        [[params.footer.socialIcon]]
-            icon = "ion-social-facebook"
-            url = "#"
 
-        [[params.footer.socialIcon]]
-            icon = "ion-social-instagram"
-            url = "#"
+######################## call to action ###############################
+[params.cta]
+enable = true
+image = "images/hugo-muscot.svg"
+title = "Get the best hugo templates"
+description = "Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
+[params.cta.button]
+enable = true
+label = "Visit Here"
+link = "https://gethugothemes.com/shop/"
 
-        [[params.footer.socialIcon]]
-            icon = "ion-social-linkedin"
-            url = "#"
+
+############################## Social Site ##########################
+[[params.social]]
+icon = "ti-facebook" # themify icon pack https://themify.me/themify-icons
+link = "#"
+[[params.social]]
+icon = "ti-twitter-alt" # themify icon pack https://themify.me/themify-icons
+link = "#"
+[[params.social]]
+icon = "ti-github" # themify icon pack https://themify.me/themify-icons
+link = "#"
+[[params.social]]
+icon = "ti-linkedin" # themify icon pack https://themify.me/themify-icons
+link = "#"

@@ -5,3 +5,6 @@
 	path = public
 	url = https://github.com/kjw217/kjw217.github.io.git
 	branch = master
+[submodule "themes/northendlab-hugo"]
+	path = themes/northendlab-hugo
+	url = https://github.com/themefisher/northendlab-hugo.git
