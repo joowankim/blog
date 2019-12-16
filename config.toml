@@ -45,20 +45,27 @@ name = "Contact"
 weight = 1
 
 [[menu.main]]
-URL = "tools"
-name = "tools"
+URL = "posts"
+name = "Posts"
+identifier = "posts"
 weight = 2
+
+[[menu.main]]
+name = "Languages"
+parent = "posts"
+identifier = "languages"
+
+[[menu.main]]
+URL = "posts/Python/"
+name = "Python"
+parent = "languages"
+
 
 # footer menu
 [[menu.footer]]
 URL = "contact"
 name = "Contact"
 weight = 1
-
-[[menu.footer]]
-URL = "tools"
-name = "tools"
-weight = 2
 
 
 ######################### Default Parameters ###########################
