@@ -1,8 +1,8 @@
 ############################ Default configuration #########################
 baseURL = "https://kjw217.github.io/"
-languageCode = "en-us"
+languageCode = "ko-kr"
 # site title 
-title = "Northendlab | Blog Template"
+title = "References"
 # theme
 theme = "northendlab-hugo"
 # post pagination
@@ -40,40 +40,33 @@ URL = "plugins/search/search.js"
 
 # main menu
 [[menu.main]]
-URL = "contact"
-name = "Contact"
-weight = 1
-
-[[menu.main]]
 URL = "posts"
 name = "Posts"
-identifier = "posts"
-weight = 2
-
-[[menu.main]]
-name = "Languages"
-parent = "posts"
-identifier = "languages"
-
-[[menu.main]]
-URL = "posts/Python/"
-name = "Python"
-parent = "languages"
-
-
-# footer menu
-[[menu.footer]]
-URL = "contact"
-name = "Contact"
+identifier = "Posts"
 weight = 1
 
+[[menu.main]]
+URL = "posts/languages/"
+name = "Languages"
+identifier = "Languages"
+parent = "Posts"
+
+[[menu.main]]
+URL = "posts/languages/python/"
+name = "Python"
+parent = "Languages"
+
+[[menu.main]]
+URL = "posts/languages/go/"
+name = "GO"
+parent = "Languages"
 
 ######################### Default Parameters ###########################
 [params]
 # home
 home = "Home"
 # logo
-logo = "images/logo.svg"
+logo = "images/logo_re.png"
 # meta data
 author = "Themefisher"
 description = "This is meta description"
@@ -96,9 +89,9 @@ enable = true
 
 ####################### banner #######################################
 [params.banner]
-bgImage = "images/banner/banner-bg.svg"
-title = "Hi, I'm John Smith Doe. <br> I help people make the  worlds best software"
-image = "images/banner/illustration.svg"
+bgImage = "images/banner/joke-white.png"
+title = ""
+image = ""
 
 
 ######################## call to action ###############################
@@ -122,7 +115,12 @@ icon = "ti-twitter-alt" # themify icon pack https://themify.me/themify-icons
 link = "#"
 [[params.social]]
 icon = "ti-github" # themify icon pack https://themify.me/themify-icons
-link = "#"
+link = "https://github.com/kjw217"
 [[params.social]]
 icon = "ti-linkedin" # themify icon pack https://themify.me/themify-icons
 link = "#"
+
+################################# Taxonomies #############################
+[taxonomies]
+tag = "tags"
+category = "categories"
