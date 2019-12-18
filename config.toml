@@ -45,6 +45,7 @@ name = "Posts"
 identifier = "Posts"
 weight = 1
 
+# languages
 [[menu.main]]
 URL = "posts/languages/"
 name = "Languages"
@@ -60,6 +61,20 @@ parent = "Languages"
 URL = "posts/languages/go/"
 name = "GO"
 parent = "Languages"
+
+# Make Blog
+[[menu.main]]
+URL = "posts/makeblog/"
+name = "블로그 만들기"
+parent = "Posts"
+identifier = "Make Blog"
+
+[[menu.main]]
+URL = "posts/makeblog/hugo/"
+name = "Hugo&Github Pages"
+parent = "Make Blog"
+
+
 
 ######################### Default Parameters ###########################
 [params]
