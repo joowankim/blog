@@ -139,3 +139,15 @@ link = "#"
 [taxonomies]
 tag = "tags"
 category = "categories"
+
+############################### Markup #########################
+[markup.highlight]
+codeFence = true
+hl_Lines = ""
+lineNoStart = 1
+lineNos = true
+lineNumbersInTable = true
+noClasses = true
+style = "github"
+tabWidth = 4
+pygmentsCodefences = true

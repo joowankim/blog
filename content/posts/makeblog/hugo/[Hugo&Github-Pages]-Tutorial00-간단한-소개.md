@@ -1,5 +1,5 @@
 ---
-title: "[Hugo&Github Pages] Tutorial 00"
+title: "[Hugo&Github Pages] Tutorial00 간단한 소개"
 date: 2019-12-18T13:37:13+09:00
 draft: false
 author: "joowan kim"
