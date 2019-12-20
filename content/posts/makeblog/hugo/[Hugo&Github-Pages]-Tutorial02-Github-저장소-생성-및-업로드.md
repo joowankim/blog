@@ -1,7 +1,7 @@
 ---
 title: "[Hugo&Github Pages] Tutorial02 Github 저장소 생성 및 업로드"
 date: 2019-12-19T10:24:34+09:00
-draft: true
+draft: false
 author: "joowan kim"
 description: "Github settings"
 categories: ["Blog", "Hugo", "Github Pages"]

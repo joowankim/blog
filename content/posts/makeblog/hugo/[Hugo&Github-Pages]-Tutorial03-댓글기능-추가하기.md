@@ -1,7 +1,7 @@
 ---
 title: "[Hugo&Github Pages] Tutorial03 댓글기능 추가하기"
 date: 2019-12-19T10:38:17+09:00
-draft: true
+draft: false
 author: "joowan kim"
 description: "Add comment function"
 categories: ["Hugo", "Blog"]
