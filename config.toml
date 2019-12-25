@@ -45,22 +45,22 @@ name = "Posts"
 identifier = "Posts"
 weight = 1
 
-# languages
-[[menu.main]]
-URL = "posts/languages/"
-name = "Languages"
-identifier = "Languages"
-parent = "Posts"
-
-[[menu.main]]
-URL = "posts/languages/python/"
-name = "Python"
-parent = "Languages"
-
-[[menu.main]]
-URL = "posts/languages/go/"
-name = "GO"
-parent = "Languages"
+## languages
+#[[menu.main]]
+#URL = "posts/languages/"
+#name = "Languages"
+#identifier = "Languages"
+#parent = "Posts"
+#
+#[[menu.main]]
+#URL = "posts/languages/python/"
+#name = "Python"
+#parent = "Languages"
+#
+#[[menu.main]]
+#URL = "posts/languages/go/"
+#name = "GO"
+#parent = "Languages"
 
 # Make Blog
 [[menu.main]]
