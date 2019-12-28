@@ -1,6 +1,6 @@
 ---
-title: "[Operating System] 07 Memory"
-date: 2019-12-26T12:17:12+09:00
+title: "[Operating System] 03 Process Scheduling"
+date: 2019-12-28T17:00:54+09:00
 draft: true
 author: "joowan kim"
 description: ""

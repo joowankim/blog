@@ -1,7 +1,7 @@
 ---
 title: "[Hugo&Github Pages] Theme Customizing 01 카테고리 만들기"
 date: 2019-12-22T21:38:45+09:00
-draft: true
+draft: false
 author: "joowan kim"
 description: "Create category tab"
 categories: ["Hugo", "Github Pages", "Blog"]

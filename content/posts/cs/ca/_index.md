@@ -1,6 +1,6 @@
 ---
-title: "[Operating System] 04 Scheduling"
-date: 2019-12-26T12:16:39+09:00
+title: "Ca"
+date: 2019-12-28T14:09:28+09:00
 draft: true
 author: "joowan kim"
 description: ""
