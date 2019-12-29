@@ -11,14 +11,14 @@ type: post
 
 
 ### Challenging Issues
-> 1. At any given time, each resource can serve only one process
->   * OS -> **Process Management**
-> 1. Multiple processes can be executed while sharing memory
->   * OS -> **Memory Management**
-> 1. Using I/O device takes a long time, and CPU is idle and underutilized
->   * OS -> **I/O Management**
-> 1. An unauthorized process causes a system fault although other processes have no problem
->   * OS -> **Protection**
+1. At any given time, each resource can serve only one process
+  * OS -> **Process Management**
+1. Multiple processes can be executed while sharing memory
+  * OS -> **Memory Management**
+1. Using I/O device takes a long time, and CPU is idle and underutilized
+  * OS -> **I/O Management**
+1. An unauthorized process causes a system fault although other processes have no problem
+  * OS -> **Protection**
 
 1. Process Management
     * process: 실행중인 프로그램
@@ -34,11 +34,11 @@ type: post
     * device controller informs the CPU via an **interrupt** that it has finished
 
 ### Basic Operations
-> OS의 기본적인 동작에는 multitasking, interrupt, protection이 있다
+OS의 기본적인 동작에는 multitasking, interrupt, protection이 있다
 
 #### Multitasking
-> 메인메모리에 동시에 올라와 있는 process들은 CPU time이나 I/O devices와 같은 resource를 공유한다.
-> 이를 관리하고 조정하는 게 멀티태스킹.
+메인메모리에 동시에 올라와 있는 process들은 CPU time이나 I/O devices와 같은 resource를 공유한다.  
+이를 관리하고 조정하는 게 멀티태스킹.
 
 * 장점
     1. CPU Utilization
@@ -49,7 +49,7 @@ type: post
         * which process do we run first?: **CPU Job Scheduling**
 
 #### Interrupt
-> Interrupt: device의 작업이 끝났음을 CPU에게 알리는 수단
+Interrupt: device의 작업이 끝났음을 CPU에게 알리는 수단  
 ![interrupt](/images/post/os/interrupt.png#center50)
 
 1. Hardware Interrupt: Hardware I/O device interrupt CPU
@@ -64,12 +64,12 @@ type: post
     ![hardware-interrupt-timeline](/images/post/os/hardware-interrupt-timeline.png#center100)
 
 #### Protection
-> OS와 user는 컴퓨터 시스템의 HW/SW를 공유한다. 
-> Malicious program이 다른 프로그램에 해를 끼치지 못하도록 하기위해 OS code와 user code를 구별해야했다.
+OS와 user는 컴퓨터 시스템의 HW/SW를 공유한다.  
+Malicious program이 다른 프로그램에 해를 끼치지 못하도록 하기위해 OS code와 user code를 구별해야했다.
 
 ##### Dual-mode operation
-> Kernel mode와 User mode를 구분  
-> 하드웨어(e.g. CPU)에서 Mode bit를 가짐(Kernel:0, user:1)
+Kernel mode와 User mode를 구분  
+하드웨어(e.g. CPU)에서 Mode bit를 가짐(Kernel:0, user:1)
 
 ![dual-mode](/images/post/os/dual-mode.png#center100)
 

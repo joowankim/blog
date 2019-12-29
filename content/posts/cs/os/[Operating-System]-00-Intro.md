@@ -10,12 +10,12 @@ type: post
 ---
 
 ### Operating System
-> A collection of computer programs
+A collection of computer programs
 * **mananges** computer hardware resources
 * **provides** a **basis** for application programs
 * acts as an **interface** between the computer user and the computer hardware
 
-### What OSs do
+### What OSes do
 * User View:
     1. Command Line Interface(CLI)
     1. Graphical User Interface(GUI)
@@ -32,7 +32,7 @@ type: post
         * **preemption**: looping process로 부터 CPU resource를 다시 가져옴
         * **Memory Protection**: 다른 process의 메모리 영역을 침범하지 못하게 함
 ### Computer System
-> 하드웨어, OS, application programs, 유저로 나뉜다  
+하드웨어, OS, application programs, 유저로 나뉜다  
 
 ![an-interface](/images/post/os/as-an-interface.png#center50)
 

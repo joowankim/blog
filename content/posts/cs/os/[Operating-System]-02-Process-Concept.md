@@ -10,24 +10,24 @@ type: post
 ---
 
 ### Process
-> A program in execution  
-> 실행중인 프로그램
+A program in execution  
+실행중인 프로그램  
 
 ![process](/images/post/os/process.png#center50)
 
 ### Process in Memory
-> 다음 그림은 메모리 영역을 나타낸 그림이다.  
-> 각 영역은 text, data, stack, heap이라는 이름으로 정의되었으며, data영역은 대략 아래와 같이 3가지로 나뉜다고 한다.
+다음 그림은 메모리 영역을 나타낸 그림이다.  
+각 영역은 text, data, stack, heap이라는 이름으로 정의되었으며, data영역은 대략 아래와 같이 3가지로 나뉜다고 한다.
 
-![memory-area](/images/post/os/memory-area.png#center100)
+![memory-area](/images/post/os/memory-area.png#center50)
 
 ##### Text 영역
-> 프로그램의 실행 코드가 존재하며, 컴파일된 binary assembly code 또한 이 곳에 저장된다
+프로그램의 실행 코드가 존재하며, 컴파일된 binary assembly code 또한 이 곳에 저장된다
 * 프로그램 실행코드
 * 컴파일된 Binary Assembly Code
 ##### Data 영역
-> 전역변수와 static symbol이 저장되는 영역이다.  
-> 해당 영역을 쓰임새에 따라 다음 3가지 영역으로 나뉜다.
+전역변수와 static symbol이 저장되는 영역이다.  
+해당 영역을 쓰임새에 따라 다음 3가지 영역으로 나뉜다.
 
 1. 읽기 전용으로 초기화되는 영역: **.rodata**
     * const로 선언 되는 영역
@@ -48,14 +48,14 @@ type: post
 |static int i;|BSS 영역|
 
 ##### Stack 영역
-> function call을 통해 stack 영역 내에 매개변수, 반환 주소값, 지역변수에 대한 영역을 할당한다.  
-> function call이 일어날 때마다 앞서 말한 3가지가 스택처럼 할당된다. **PUSH**  
-> function 호출이 완료되었을 땐, 스택에서 사라진다. **POP**
-> 위와 같이 스택 영역에 차례대로 저장되는 함수의 호출 정보를 스택 프레임(Stack Frame)이라고한다.
+function call을 통해 stack 영역 내에 매개변수, 반환 주소값, 지역변수에 대한 영역을 할당한다.  
+function call이 일어날 때마다 앞서 말한 3가지가 스택처럼 할당된다. **PUSH**  
+function 호출이 완료되었을 땐, 스택에서 사라진다. **POP**
+위와 같이 스택 영역에 차례대로 저장되는 함수의 호출 정보를 스택 프레임(Stack Frame)이라고한다.
 
 ###### 스택 프레임(Stack Frame) 동작과정
-> 아래와 같은 코드가 있을 때 스택 프레임의 동작과정을 살펴보자  
-> 아래 과정은 [TCP school 스택 프레임](http://tcpschool.com/c/c_memory_stackframe)과 같은 예시이다.
+아래와 같은 코드가 있을 때 스택 프레임의 동작과정을 살펴보자  
+아래 과정은 [TCP school 스택 프레임](http://tcpschool.com/c/c_memory_stackframe)과 같은 예시이다.
 ```c
 int main(void)
 {
@@ -81,9 +81,18 @@ void func2()
 1. **STEP 06>** `main()` 함수의 **모든 작업이 완료**되면, `main()` *함수의 스택 프레임*이 **스택에서 제거**되면서 **프로그램이 종료**   
 
 ##### Heap 영역
-> 사용자가 직접 관리할 수 있는 영역 malloc()이나 new 연산자를 통해 메모리를 동적할당할 수 있다.  
-> 사용자는 메모리의 할당(new)과 해제(free)를 직접 관리해야하며, 객체지향언어(C++/Java)에서는 Garbage Collection이 제공되지만 그래도 직접적인 관여는 필요하다.
+사용자가 직접 관리할 수 있는 영역 `malloc()`이나 `new` 연산자를 통해 메모리를 동적할당할 수 있다.  
+사용자는 메모리의 할당(new)과 해제(free)를 직접 관리해야하며, 객체지향언어(C++/Java)에서는 Garbage Collection이 제공되지만 그래도 직접적인 관여는 필요하다.
 
+### Process Management
+각 프로세스는 OS에 등록되고 OS가 관리한다.  
+이를 위해 OS는 각 프로세스의 정보를 담은 Data Structure가 필요하다.  
+이를 PCB(Process Control Block)이라고 한다.
+ 
+ #### PCB(Process Control Block)
+ Process state, Process number(pid), Program Counter(PC), CPU registers 등을 포함한다.
+ 
+![PCB](/images/post/os/pcb.png#center100)
  
 ---
 ###### 참고 자료
