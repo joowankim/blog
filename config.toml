@@ -74,6 +74,19 @@ URL = "posts/makeblog/hugo/"
 name = "Hugo&Github Pages"
 parent = "Make Blog"
 
+# cs
+[[menu.main]]
+URL = "posts/cs/"
+name = "Computer Science"
+parent = "Posts"
+identifier = "CS"
+
+[[menu.main]]
+URL = "posts/cs/os"
+name = "OS"
+parent = "CS"
+identifier = "OS"
+
 
 
 ######################### Default Parameters ###########################

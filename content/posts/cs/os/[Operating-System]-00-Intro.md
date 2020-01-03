@@ -1,7 +1,7 @@
 ---
 title: "[Operating System] 00 Intro"
 date: 2019-12-26T12:15:22+09:00
-draft: true
+draft: false
 author: "joowan kim"
 description: "Opertaing System Introduction"
 categories: ["Operating System", "Intro"] 
@@ -10,10 +10,10 @@ type: post
 ---
 
 ### Operating System
-A collection of computer programs
-* **mananges** computer hardware resources
-* **provides** a **basis** for application programs
-* acts as an **interface** between the computer user and the computer hardware
+A collection of computer programs.
+* **mananges** computer hardware resources.
+* **provides** a **basis** for application programs.
+* acts as an **interface** between the computer user and the computer hardware.
 
 ### What OSes do
 * User View:
