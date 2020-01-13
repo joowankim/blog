@@ -1,7 +1,7 @@
 ---
 title: "[Operating System] 01 Structure"
 date: 2019-12-26T12:15:44+09:00
-draft: true
+draft: false
 author: "joowan kim"
 description: "Operation System Structure"
 categories: ["Operating System"]
