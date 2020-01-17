@@ -1,7 +1,7 @@
 ---
 title: "[Operating System] 02 Process Concept"
 date: 2019-12-26T12:16:15+09:00
-draft: true
+draft: false
 author: "joowan kim"
 description: "process"
 categories: ["Operating System"]
