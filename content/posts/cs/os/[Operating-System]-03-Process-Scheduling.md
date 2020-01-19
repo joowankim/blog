@@ -1,7 +1,7 @@
 ---
 title: "[Operating System] 03 Process Scheduling"
 date: 2019-12-28T17:00:54+09:00
-draft: true
+draft: false
 author: "joowan kim"
 description: "Process Scheduling"
 categories: ["Operating System"]
