@@ -86,12 +86,12 @@ new Function(arg1, arg2, ... argN, functionBody)
 ### method vs function
 https://okky.kr/article/453415
 https://m.blog.naver.com/PostView.nhn?blogId=byacj&logNo=120163659628&proxyReferer=https%3A%2F%2Fwww.google.com%2F
-해당 method(function)을 수행하는 주체에 따라 달라진다
 
-#### method
-수행하는 주체(this)가 method를 property로 가질 때
-#### function
-수행하는 주체(this)가 window일 때
+해당 function(method)을 수행하는 주체에 따라 달라진다.  
+**method**: 수행하는 주체(this)가 method를 property로 가질 때  
+**function**: 수행하는 주체(this)가 window일 때
+
+
 
 ### function
 JavaScript에서 모든 함수는 `Fucntion` 객체
